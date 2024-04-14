@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\Admin\AdminPageController::class, 'index'])->name('index');
+Route::get('/add_product', [\App\Http\Controllers\Admin\AdminPageController::class, 'add_product'])->name('add_product');
+
+
+Route::get('/signin', [\App\Http\Controllers\Admin\AdminPageController::class, 'signin'])->name('adminSignin');

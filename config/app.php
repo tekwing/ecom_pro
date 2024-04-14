@@ -30,6 +30,8 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
+    'administrator' => env('ADMIN_ASSETS', 'http://127.0.0.1:8000/Administrator'),
+    //'assets2' => env('ASSETS', 'http://127.0.0.1:8000/administrator/'),
 
     /*
     |--------------------------------------------------------------------------
